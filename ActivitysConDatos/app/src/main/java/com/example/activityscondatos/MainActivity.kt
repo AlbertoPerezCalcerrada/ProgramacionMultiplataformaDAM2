@@ -7,8 +7,8 @@ import android.provider.Telephony.Mms.Intents
 import com.example.activityscondatos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var binding: ActivityMainBinding
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun IrVentana2() {
         var miIntent: Intent = Intent(this, Ventana2::class.java)
+        miIntent.putExtra("Nombre", binding.cajaNombre.text.toString())
+        miIntent.putExtra("Edad", binding.cajaEdad.text.toString())
         startActivity(miIntent)
     }
 }
