@@ -1,14 +1,16 @@
-package com.example.estilos
+package com.example.simon
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.estilos.databinding.ActivityMainBinding
+import com.example.simon.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var binding: ActivityMainBinding
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }
