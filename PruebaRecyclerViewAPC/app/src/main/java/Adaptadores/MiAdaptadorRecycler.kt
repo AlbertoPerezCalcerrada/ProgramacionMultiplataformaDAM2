@@ -14,10 +14,12 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.pruebarecyclerviewapc.MainActivity
 import com.example.pruebarecyclerviewapc.MainActivity2
-import com.example.recyclerview.R
+import com.example.pruebarecyclerviewapc.R
 
 class MiAdaptadorRecycler(var personajes : ArrayList<Personaje>, var  context: Context) : RecyclerView.Adapter<MiAdaptadorRecycler.ViewHolder>(){
 
@@ -162,20 +164,20 @@ class MiAdaptadorRecycler(var personajes : ArrayList<Personaje>, var  context: C
                 Toast.makeText(context, "Valor seleccionado " +  MiAdaptadorRecycler.seleccionado.toString(), Toast.LENGTH_SHORT).show()
 
             }
-//            itemView.setOnLongClickListener(View.OnLongClickListener {
-//                Log.e("ACSCO","Seleccionado con long click: ${Almacen.personajes.get(pos).toString()}")
-//                Almacen.personajes.removeAt(pos)
-//                miAdaptadorRecycler.notifyDataSetChanged()
-//                true //Tenemos que devolver un valor boolean.
-//            })
-//
-//
-//            btnDetalleEspcifico.setOnClickListener {
-//                Log.e("Fernando","Has pulsado el botón de ${pers}")
-//                var inte : Intent = Intent(MainActivity.contextoPrincipal, MainActivity2::class.java)
-//                inte.putExtra("obj",pers)
-//                ContextCompat.startActivity(MainActivity.contextoPrincipal, inte, null)
-//            }
+            itemView.setOnLongClickListener(View.OnLongClickListener {
+                Log.e("ACSCO","Seleccionado con long click: ${Almacen.personajes.get(pos).toString()}")
+                Almacen.personajes.removeAt(pos)
+                miAdaptadorRecycler.notifyDataSetChanged()
+                true //Tenemos que devolver un valor boolean.
+            })
+
+
+            btnDetalleEspcifico.setOnClickListener {
+                Log.e("Fernando","Has pulsado el botón de ${pers}")
+                var inte : Intent = Intent(MainActivity.contextoPrincipal, MainActivity2::class.java)
+                inte.putExtra("obj",pers)
+                ContextCompat.startActivity(MainActivity.contextoPrincipal, inte, null)
+            }
         }
     }
 }
