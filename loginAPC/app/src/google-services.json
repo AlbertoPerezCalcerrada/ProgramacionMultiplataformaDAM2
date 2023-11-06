@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918239405265",
+    "project_id": "loginapc-f4257",
+    "storage_bucket": "loginapc-f4257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918239405265:android:7972284d1440e0288551f0",
+        "android_client_info": {
+          "package_name": "com.example.loginapc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4byqkun3DI3d1AJtdWkaBZMG7sUpP6hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

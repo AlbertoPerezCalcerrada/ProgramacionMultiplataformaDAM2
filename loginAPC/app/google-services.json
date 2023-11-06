@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "918239405265",
+    "project_id": "loginapc-f4257",
+    "storage_bucket": "loginapc-f4257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918239405265:android:7972284d1440e0288551f0",
+        "android_client_info": {
+          "package_name": "com.example.loginapc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918239405265-r11ad6dr4nbr7jpsi604p4fdjf7rel9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginapc",
+            "certificate_hash": "6ada56894a4b375f13bda1c4e4ef665184bed595"
+          }
+        },
+        {
+          "client_id": "918239405265-lo7fvmlrv99ihbjb31jm3o0iuk9vc05c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4byqkun3DI3d1AJtdWkaBZMG7sUpP6hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918239405265-lo7fvmlrv99ihbjb31jm3o0iuk9vc05c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
